@@ -20,8 +20,16 @@
   },
   "copyFiles": [
     {
+      "from": "node_modules/bootstrap/js/dist/**",
+      "to": "public/js/bootstrap"
+    },
+    {
       "from": "node_modules/@fortawesome/fontawesome-free/**",
       "to": "public/assets/fontawesome"
+    },
+    {
+      "from": "node_modules/@popperjs/core/dist/umd/**",
+      "to": "public/js/popperjs"
     }
   ],
   "browserslist": [
