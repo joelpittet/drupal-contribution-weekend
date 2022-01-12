@@ -7,7 +7,7 @@ use Twig\Loader\FilesystemLoader;
 
 $loader = new FilesystemLoader('../templates');
 $twig = new Environment($loader, [
-    'cache' => 'cache',
+    'cache' => '../cache',
     'auto_reload' => true,
 ]);
 
