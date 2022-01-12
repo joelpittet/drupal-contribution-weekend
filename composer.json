@@ -1,0 +1,15 @@
+{
+    "require": {
+        "twig/twig": "^3.3"
+    },
+    "config": {
+        "discard-changes": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "7.4.9"
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

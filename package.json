@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "build:sass": "sass sass:css",
+    "autoprefixer": "postcss --no-map -u autoprefixer --autoprefixer.browsers -r css/*.css",
+    "build:css": "npm run build:sass && npm run autoprefixer",
+    "watch:css": "onchange 'sass/**/*.scss' -- npm run build:css",
+    "watch:all": "concurrently --kill-others 'npm run watch:css'",
+    "postinstall": "copy-files-from-to"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0-beta3",
+    "autoprefixer": "^10.0.0",
+    "concurrently": "^6.0.0",
+    "bootstrap": "^5.0.0",
+    "copy-files-from-to": "^3.0.0",
+    "normalize.css": "^8.0.0",
+    "postcss-cli": "^9.0.0"
+  },
+  "copyFiles": [
+    {
+      "from": "node_modules/@fortawesome/fontawesome-free/**",
+      "to": "public/assets/fontawesome"
+    }
+  ],
+  "browserslist": [
+    "> 1%"
+  ]
+}
