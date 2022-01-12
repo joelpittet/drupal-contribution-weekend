@@ -4,87 +4,93 @@
     <h1>Drupal Global Contribution Weekend 2022 - Vancouver</h1>
 {% endblock %}
 
+{% block aside %}
+
+    <h2><i class="fa-solid fa-arrow-down"></i> On this page</h2>
+    <dl>
+        <dd><a href="#setup">Getting Set-up</a></dd>
+        <dd><a href="#agenda">During the day</a></dd>
+        <dd><a href="#references">References</a></dd>
+        <dd><a href="#location">Where</a></dd>
+        <dd><a href="#time">When</a></dd>
+        <dd><a href="#thanks">Thanks</a></dd>
+    </dl>
+
+    <h2 id="location"><i class="fa-solid fa-location-pin"></i> Where</h2>
+    <a href="https://ubc.zoom.us/j/68502794323?pwd=b205TE5xVFJSYTNRZ1U3Y21hS0crdz09">Zoom</a>
+    <h2 id="time"><i class="fa-solid fa-calendar"></i> When</h2>
+    <p class="lead">Friday, January 28th, 2022<br/>9am &ndash; 5pm</p>
+    <p class="lead">Saturday, January 29th, 2022<br/>9am &ndash; 5pm</p>
+    <p class="lead">Sunday, January 30th, 2022<br/>Free-for-all</p>
+    <h2 id="thanks"><i class="fa-solid fa-hand-holding-heart"></i> Thanks</h2>
+<p>Thanks to UBC Computer Science department for hosting the Zoom.
+    {#    <!-- <a href="https://thejibe.com/"><img src="https://thejibe.com/themes/quirky/ecommerce_agency.png" class="jibe-logo" /></a></p>
+  <address>Suite 202 - 311 Water St, Vancouver, BC<br/>
+  Vancouver, Canada V6B 1B8<br/>
+  Street maps of The Jibe's office location
+  </address>
+  <a href="https://maps.google.com/maps?q=311+Water+St+%23202,+Vancouver,+BC,+Canada&hl=en&sll=37.0625,-95.677068&sspn=60.288153,105.732422&t=h&hnear=311+Water+St+%23202,+Vancouver,+British+Columbia+V6B+4Y2,+Canada&z=16" class="map-link">
+  <img src="https://a.tiles.mapbox.com/v3/stevekrueger.map-3dhy0n3s/-123.10876999999998,49.28456,17/320x320.png" /> -->
+   </a>#}
+    {% endblock %}
 {% block content %}
-    <div class="float-lg-end">
-
-        <h3>On this page</h3>
-        <ul>
-            <li><a href="#setup">Getting Setup</a></li>
-            <li><a href="#agenda">During the day</a></li>
-            <li><a href="#references">References</a></li>
-            <li><a href="#location">Where</a></li>
-            <li><a href="#time">When</a></li>
-            <li><a href="#thanks">Thanks</a></li>
-        </ul>
-        <p class="btn-link " data-bs-toggle="collapse" data-bs-target="#haha" aria-expanded="false"
-           aria-controls="haha"><small><i class="fa-solid fa-circle-question fa-sm"></i> Click the help icon to see
-                details.</small></p>
-        <div id="haha" class="collapse">
-            <p>Well not this one silly! The other ones, geez 😜</p>
-        </div>
-    </div>
-
-    <h2 id="setup"><i class="fa-solid fa-tools"></i> Getting Setup</h2>
+    <h2 id="setup"><i class="fa-solid fa-tools"></i> Getting Set-up</h2>
 
     <p class="text-warning"> <em>Please have these steps' setup before the contribution weekend!</em></p>
 
-    <ol>
-        <li><strong>Create an account on <a href="https://drupal.org/user/register" class="ext">Drupal.org</a></strong> if you do not yet have one.</li>
-        <li>
-            <strong>Join the conversation Drupal's <a href="https://www.drupal.org/slack" class="ext">Slack</a> groups</strong>
+    <h3>1. Create an account on <a href="https://drupal.org/user/register" class="ext">Drupal.org</a></h3>
+    <h3>2. Join the conversation Drupal's <a href="https://www.drupal.org/slack" class="ext">Slack</a> groups</h3>
 
-            <p>Add <a href="http://drupalslack.herokuapp.com">Drupal Slack</a> and <a href="https://vandug.herokuapp.com/">Van DUG</a> groups.
+    <p>Add <a href="http://drupalslack.herokuapp.com">Drupal Slack</a> and <a href="https://vandug.herokuapp.com/">Van DUG</a> groups.
 
-            <p>Join the
-                <code>#drupal-pnw</code> and
-                <code>#drupal-contribute</code> slack channels.
-            </p>
-        </li>
-    </ol>
-    <h3><i class="fa-solid fa-hiking"></i> Choose your own adventure:</h3>
+    <p>Join the
+        <code>#drupal-pnw</code> and
+        <code>#drupal-contribute</code> slack channels.
+    </p>
+    <h3>3. <i class="fa-solid fa-hiking"></i> Choose your own adventure:</h3>
 
     <details>
         <summary>Local Development Environment: DDEV</summary>
         <div class="details__content">
-        <ol>
-            <li>
-                <strong>Install <a href="https://git-scm.com/downloads" class="ext">git</a></strong>.
-                <button type="button" class="btn btn-link help" data-bs-toggle="collapse" data-bs-target="#git" aria-expanded="false" aria-controls="git">
-                    <i class="fa-solid fa-circle-question fa-xl"></i>
-                </button>
-                <div id="git" class="collapse">
-                    <p><a title="Free online git reference book" href="https://git-scm.com/book" class="ext">free online reference book</a></p>
-                </div>
-            </li>
-            <li>
-                <p><strong>Install <a href="https://ddev.readthedocs.io/en/stable/">DDEV</a>.</strong>
-                    <button type="button" class="btn btn-link help" data-bs-toggle="collapse" data-bs-target="#dev-stack" aria-expanded="false" aria-controls="dev-stack">
+            <ol>
+                <li>
+                    <strong>Install <a href="https://git-scm.com/downloads" class="ext">git</a></strong>.
+                    <button type="button" class="btn btn-link help" data-bs-toggle="collapse" data-bs-target="#git" aria-expanded="false" aria-controls="git">
                         <i class="fa-solid fa-circle-question fa-xl"></i>
                     </button>
-                </p>
-                <div id="dev-stack" class="collapse">
-                    <p>There are plenty more local development environments to choose from in the guide: <a href="https://www.drupal.org/docs/develop/local-server-setup" class="ext">Local server setup</a>. </p>
-                </div>
-            </li>
-            <li>
-                <p><strong>Create a local D9 website:</strong>
-                    <strong>Clone <a href="https://www.drupal.org/project/drupal/git-instructions" title="Drupal 9.x.x | drupal.org">Drupal 9</a> with git:</strong>
+                    <div id="git" class="collapse">
+                        <p><a title="Free online git reference book" href="https://git-scm.com/book" class="ext">free online reference book</a></p>
+                    </div>
+                </li>
+                <li>
+                    <p><strong>Install <a href="https://ddev.readthedocs.io/en/stable/">DDEV</a>.</strong>
+                        <button type="button" class="btn btn-link help" data-bs-toggle="collapse" data-bs-target="#dev-stack" aria-expanded="false" aria-controls="dev-stack">
+                            <i class="fa-solid fa-circle-question fa-xl"></i>
+                        </button>
+                    </p>
+                    <div id="dev-stack" class="collapse">
+                        <p>There are plenty more local development environments to choose from in the guide: <a href="https://www.drupal.org/docs/develop/local-server-setup" class="ext">Local server setup</a>. </p>
+                    </div>
+                </li>
+                <li>
+                    <p><strong>Create a local D9 website:</strong>
+                        <strong>Clone <a href="https://www.drupal.org/project/drupal/git-instructions" title="Drupal 9.x.x | drupal.org">Drupal 9</a> with git:</strong>
 
-                </p>
-                <pre><code>mkdir ~/Sites/d9
+                    </p>
+                    <pre><code>mkdir ~/Sites/d9
 cd ~/Sites/d9
 git clone https://git.drupalcode.org/project/drupal.git web
 ddev config</code></pre>
 
 
-            </li>
-            <li><strong>Install Drupal and <em>you're ready to patch!</em></strong>
+                </li>
+                <li><strong>Install Drupal and <em>you're ready to patch!</em></strong>
 
                     <p>From within the project directory</p>
                     <pre><code>ddev drush si standard</code></pre>
 
-            </li>
-        </ol>
+                </li>
+            </ol>
         </div>
     </details>
 
@@ -109,6 +115,8 @@ ddev config</code></pre>
             editing documentation and helping triage and move issues, to editing files directly in Gitlab on
             drupal.org.</div>
     </details>
+
+
 
     <h2 id="agenda"><i class="fa-solid fa-cloud-sun"></i> During the day</h2>
 
@@ -137,21 +145,3 @@ ddev config</code></pre>
     </ul>
 {% endblock %}
 
-{% block aside %}
-<h2 id="location"><i class="fa-solid fa-location-pin"></i> Where</h2>
-<a href="https://ubc.zoom.us/j/68502794323?pwd=b205TE5xVFJSYTNRZ1U3Y21hS0crdz09">Zoom</a>
-<h2 id="time"><i class="fa-solid fa-calendar"></i> When</h2>
-<p class="lead">Friday, January 28th, 2022<br/>9am &ndash; 5pm</p>
-<p class="lead">Saturday, January 29th, 2022<br/>9am &ndash; 5pm</p>
-<p class="lead">Sunday, January 30th, 2022<br/>Free-for-all</p>
-<h2 id="thanks"><i class="fa-solid fa-hand-holding-heart"></i> Thanks</h2>
-<p>Thanks to UBC Computer Science department for hosting the Zoom.
-    {#    <!-- <a href="https://thejibe.com/"><img src="https://thejibe.com/themes/quirky/ecommerce_agency.png" class="jibe-logo" /></a></p>
-  <address>Suite 202 - 311 Water St, Vancouver, BC<br/>
-  Vancouver, Canada V6B 1B8<br/>
-  Street maps of The Jibe's office location
-  </address>
-  <a href="https://maps.google.com/maps?q=311+Water+St+%23202,+Vancouver,+BC,+Canada&hl=en&sll=37.0625,-95.677068&sspn=60.288153,105.732422&t=h&hnear=311+Water+St+%23202,+Vancouver,+British+Columbia+V6B+4Y2,+Canada&z=16" class="map-link">
-  <img src="https://a.tiles.mapbox.com/v3/stevekrueger.map-3dhy0n3s/-123.10876999999998,49.28456,17/320x320.png" /> -->
-   </a>#}
-{% endblock %}
