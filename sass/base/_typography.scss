@@ -1,7 +1,7 @@
 @import "../variables";
 
 body {
-  font-family:  "PT Serif", Georgia, serif;
+  font-family: 'PT Serif', Georgia, serif;
   @include font-size(1.5rem);
 }
 
@@ -13,7 +13,7 @@ h2 {
 h1,
 h2,
 h3 {
-  font-family: 'Montserrat', "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
 }
 
