@@ -1,6 +1,5 @@
 body {
   color: #333;
-  font: 17px/1.5 "PT Serif", Georgia, serif;
   background-color: #fff;
   padding: 0 0.25rem 1rem;
 }
@@ -8,13 +7,11 @@ body {
 @media (min-width: 40em) {
   body {
     padding: 0 2rem 2rem;
-    font-size: 18px;
   }
 }
 @media (min-width: 80em) {
   body {
     padding: 0 5rem 2rem;
-    font-size: 22px;
   }
 }
 .help {
@@ -107,6 +104,16 @@ details > .details__content {
   padding: 1rem;
 }
 
+body {
+  font-family: "PT Serif", Georgia, serif;
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
 h1,
 h2 {
   text-transform: uppercase;
@@ -121,21 +128,36 @@ h3 {
 
 h1 {
   color: #ccc;
-  font-size: 3rem;
+  font-size: calc(1.425rem + 2.1vw);
   line-height: 1;
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 h2 {
   color: #4d4d4d;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: calc(1.325rem + 0.9vw);
   line-height: 1.3em;
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 h3 {
   color: #666;
-  font-size: 1.6rem;
+  font-size: calc(1.285rem + 0.42vw);
   font-weight: 700;
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 1.6rem;
+  }
 }
 
 *:not(div) + h2,
