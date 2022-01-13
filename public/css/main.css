@@ -90,6 +90,11 @@ details summary {
   border-bottom: 1px solid #33aaee;
 }
 
+details[open] summary {
+  border-bottom-width: 3px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M53 34H11a3 3 0 010-6h42a3 3 0 010 6z' fill='%2333aaee'/%3E%3C/svg%3E");
+}
+
 summary {
   cursor: pointer;
 }
