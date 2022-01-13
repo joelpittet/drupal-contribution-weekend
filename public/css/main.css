@@ -41,7 +41,7 @@ samp {
 }
 
 code {
-  padding: 2px 4px;
+  padding: 0.1rem 0.2rem;
   color: #c7254e;
   white-space: nowrap;
   background-color: #f9f2f4;
@@ -51,8 +51,7 @@ code {
 pre {
   display: block;
   padding: 10px;
-  margin: 0 0 10.5px;
-  line-height: 1.428571429;
+  margin: 0 0 1rem;
   color: #333333;
   word-break: break-all;
   word-wrap: break-word;
@@ -78,13 +77,19 @@ details {
 }
 
 details summary {
-  font-size: 1.7rem;
+  font-size: calc(1.295rem + 0.54vw);
   background-repeat: no-repeat;
   background-position: right 0 top 50%;
   background-size: 1.7rem 1.7rem;
   color: #33aaee;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M53 29H35V11a3 3 0 00-6 0v18H11a3 3 0 000 6h18v18a3 3 0 006 0V35h18a3 3 0 000-6z' fill='%2333aaee'/%3E%3C/svg%3E");
   border-bottom: 1px solid #33aaee;
+  padding-right: 2rem;
+}
+@media (min-width: 1200px) {
+  details summary {
+    font-size: 1.7rem;
+  }
 }
 
 details[open] summary {
