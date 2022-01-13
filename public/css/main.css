@@ -115,9 +115,7 @@ h1 {
 
 h2 {
   color: #5e504c;
-  font-weight: 700;
   font-size: calc(1.4rem + 1.8vw);
-  line-height: 1.3em;
 }
 @media (min-width: 1200px) {
   h2 {
@@ -127,7 +125,6 @@ h2 {
 
 h3 {
   font-size: calc(1.325rem + 0.9vw);
-  font-weight: 700;
 }
 @media (min-width: 1200px) {
   h3 {
