@@ -27,8 +27,13 @@ summary {
   cursor: pointer;
 }
 
+// Hide arrows.
 details > summary {
   list-style: none;
+}
+// Hide arrows in safari.
+details > summary::-webkit-details-marker {
+  display: none;
 }
 
 details > .details__content {

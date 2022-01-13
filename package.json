@@ -9,20 +9,17 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.0.0-beta3",
-    "@popperjs/core": "^2.11.2",
+    "@popperjs/core": "^2.0.0",
     "autoprefixer": "^10.0.0",
     "bootstrap": "^5.0.0",
     "concurrently": "^6.0.0",
     "copy-files-from-to": "^3.0.0",
     "normalize.css": "^8.0.0",
     "onchange": "^7.0.0",
-    "postcss-cli": "^9.0.0"
+    "postcss-cli": "^9.0.0",
+    "prismjs": "^1.0.0"
   },
   "copyFiles": [
-    {
-      "from": "node_modules/bootstrap/js/dist/**",
-      "to": "public/js/bootstrap"
-    },
     {
       "from": "node_modules/@fortawesome/fontawesome-free/**",
       "to": "public/assets/fontawesome"
@@ -30,6 +27,14 @@
     {
       "from": "node_modules/@popperjs/core/dist/umd/**",
       "to": "public/js/popperjs"
+    },
+    {
+      "from": "node_modules/bootstrap/js/dist/**",
+      "to": "public/js/bootstrap"
+    },
+    {
+      "from": "node_modules/prismjs/**",
+      "to": "public/assets/prismjs"
     }
   ],
   "browserslist": [

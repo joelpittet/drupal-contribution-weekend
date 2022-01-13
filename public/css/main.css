@@ -31,13 +31,6 @@ header {
   margin-right: auto;
 }
 
-code,
-kbd,
-pre,
-samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
 details {
   border: 0;
   margin-top: 1rem;
@@ -72,6 +65,10 @@ summary {
 
 details > summary {
   list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
 }
 
 details > .details__content {
@@ -155,20 +152,11 @@ h4 {
   }
 }
 
-small {
-  color: gray;
-}
-
-p {
-  margin: 0.3em 0 0.6em 0;
-  line-height: 1.6em;
-}
-
 blockquote {
   background: #eee;
   padding: 20px;
   font-style: italic;
   text-align: center;
-  color: #69f;
+  color: #87b3a7;
   margin: 20px 0;
 }
