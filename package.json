@@ -9,7 +9,7 @@
     "postinstall": "copy-files-from-to"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.0.0-beta3",
+    "@fortawesome/fontawesome-free": "^6.0",
     "@popperjs/core": "^2.0",
     "autoprefixer": "^10.0",
     "bootstrap": "^5.0",
