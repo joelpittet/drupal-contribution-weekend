@@ -1,7 +1,7 @@
 {% extends "base.twig" %}
 
 {% block header %}
-    <h1>Drupal Global Contribution Weekend</h1>
+    <h1><i class="fa-brands fa-drupal"></i> Drupal Global Contribution Weekend</h1>
     <h2>Vancouver 2023</h2>
 {% endblock %}
 
@@ -9,38 +9,50 @@
 
     <h2><i class="fa-solid fa-arrow-down"></i> On this page</h2>
     <dl>
+        <dd><a href="#welcome">Welcome</a></dd>
         <dd><a href="#setup">Getting Set-up</a></dd>
         <dd><a href="#agenda">During the day</a></dd>
-        <dd><a href="#references">References</a></dd>
-        <dd><a href="#location">Where</a></dd>
         <dd><a href="#time">When</a></dd>
+        <dd><a href="#location">Where</a></dd>
+        <dd><a href="#join">Join</a></dd>
         <dd><a href="#thanks">Thanks</a></dd>
+        <dd><a href="#references">References</a></dd>
     </dl>
 
-    <h2 id="location"><i class="fa-solid fa-location-pin"></i> Where</h2>
-    <a href="https://ubc.zoom.us/meeting/register/u5MtduuhrDwqEtM1Yx_ky47UgdkQ0GvKFu3i">Zoom Registration</a>
     <h2 id="time"><i class="fa-solid fa-calendar"></i> When</h2>
-    <p class="lead">Friday, January 27<sup>th</sup>, 2023<br/>9am &ndash; 5pm</p>
-    <p class="lead">Saturday, January 28<sup>th</sup>, 2023<br/>9am &ndash; 5pm</p>
+    <p class="lead">Friday, January 27<sup>th</sup> and Saturday, January 28<sup>th</sup>, 2023</p>
+    <p class="lead">9am &ndash; 5pm</p>
+
+    <h2 id="location"><i class="fa-solid fa-location-pin"></i> Where</h2>
+    <h3>Online<h3>
+
+    <h2 id="join"><i class="fa-solid fa-floppy-disk"></i> Join</h2>
+    <a class="btn btn-outline-primary" href="https://ubc.zoom.us/meeting/register/u5MtduuhrDwqEtM1Yx_ky47UgdkQ0GvKFu3i">Register with Zoom</a>
+
     <h2 id="thanks"><i class="fa-solid fa-hand-holding-heart"></i> Thanks</h2>
     <p>Thanks to <a href="https://www.cs.ubc.ca">UBC Computer Science</a> department for hosting the Zoom and providing time for its web developers to contribute.
 
     {% endblock %}
 {% block content %}
+
+    <h2 id="welcome"><i class="fa-solid fa-rocket"></i> Welcome</h2>
+    <p>Everybody has something to contribute! Be you starting out or a "Triple Certified Drupal Expert", there are plenty of places to help make Drupal awesome.
+    <p><strong>Please bring:</strong> your enthusiasm and curiosity</p>
     <h2 id="setup"><i class="fa-solid fa-tools"></i> Getting Set-up</h2>
 
     <p class="text-warning"> <em>Please have these steps' setup before the contribution weekend!</em></p>
 
     <h3>1. Create an account on <a href="https://drupal.org/user/register">Drupal.org</a></h3>
-    <h3>2. Join the conversation Drupal's <a href="https://www.drupal.org/slack">Slack</a> groups</h3>
+    <h3>2. Join the conversation Drupal's <a href="https://www.drupal.org/slack">Slack</a> workspaces</h3>
 
-    <p>Add <a href="https://www.drupal.org/slack">Drupal Slack</a> and <a href="https://join.slack.com/t/vandug/shared_invite/zt-1npxicv9i-jZEl2u7ajpV4Dh7pbNdW6g">Van DUG</a> groups.
+    <p>Add <a href="https://www.drupal.org/slack">Drupal Slack</a> and <a href="https://join.slack.com/t/vandug/shared_invite/zt-1npxicv9i-jZEl2u7ajpV4Dh7pbNdW6g">Van DUG</a> workspaces.
 
-    <p>Join the <code>#contribute</code> Slack channels.</p>
+    <p>Join the <code>#contribute</code> Slack channel.</p>
 
     <h3>3. <i class="fa-solid fa-hiking"></i> Choose your own adventure:</h3>
+    <h4>Development Environment</h4>
     <details>
-        <summary>Local Development Environment: DDEV</summary>
+        <summary>Local: DDEV</summary>
         <div class="details__content">
             <ol>
                 <li>
@@ -69,14 +81,14 @@ ddev config</code></pre>
     </details>
 
     <details>
-        <summary>Cloud Development Environment: DrupalPod</summary>
+        <summary>Cloud: DrupalPod</summary>
         <div class="details__content">This is great if you don't want to touch your machine(or can't) yet still want to
             code.
             <a href="https://www.drupal.org/project/drupalpod">DrupalPod</a></div>
     </details>
 
     <details>
-        <summary>Existing Development Environment: DYI</summary>
+        <summary>Existing: DYI</summary>
         <div class="details__content"><p>You already have your setup, great! Carry on...</p>
             <p>Have a peak at the <a href="https://www.drupal.org/docs/system-requirements">Drupal requirements</a> to tweak your setup.
             <p>There are plenty more local development environments to choose from in the guide: <a href="https://www.drupal.org/docs/develop/local-server-setup">Local server setup</a>.
@@ -84,7 +96,7 @@ ddev config</code></pre>
     </details>
 
     <details>
-        <summary>No Development Environment</summary>
+        <summary>None</summary>
         <div class="details__content">There are plenty of ways to contribute without setting up a development environment, from
             <a href="https://simplytest.me/">simplytest.me</a>,
             editing documentation and helping triage and move issues, to editing files directly in Gitlab on
@@ -100,6 +112,18 @@ ddev config</code></pre>
     <p>
         Take a look at the <a href="https://www.drupal.org/contributor-tasks">Contributor tasks</a>. Work with another contributor to find a task.
     </p>
+
+    <h3 id="tasks">Finding Tasks</h3>
+    <p>Here is my <em>opinionated</em> way to find tasks to work on at a sprint.
+        <br><strong>Rule of thumb:</strong> I'd suggest the best way is to "Scratch your own itch". </p>
+    <ol>
+        <li>Can you recall a piece of functionality that isn't working the way you'd like or you had an idea to improve it, start there and
+            <a href="https://www.drupal.org/project/issues/search">search the issue queue</a> to see if anybody else had a similar/same idea.</li>
+        <li>Failing your recall, a low effort way: look at patches that you use for your projects, pick a few of those to see if you can't help them get committed upstream.</li>
+        <li>You can <a href="https://www.drupal.org/project/issues/search">search the issue queue </a>for a special "Task" tag, They are usually tagged with a "Needs ..." tag, (<a href="https://www.drupal.org/docs/develop/issues/fields-and-other-parts-of-an-issue/issue-tags-special-tags">see
+                all special tags</a>) and you can probably do a number of similar tasks on various issues that <em>Needs</em> something (be warned "Needs Tests" generally take a while, but are usually most helpful to get an issue committed, so high cost/high reward)</li>
+        <li>Still at a lost or not inspired... look at which "<a href="https://www.drupal.org/about/core/strategic-initiatives">Strategic Initiatives</a>" you'd like to see in core</li>
+    </ol>
 
     <h2 id="references"><i class="fa-solid fa-book"></i> References</h2>
 
