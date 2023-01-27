@@ -69,7 +69,16 @@
                     <pre><code class="language-bash">mkdir ~/Sites/d10
 cd ~/Sites/d10
 git clone https://git.drupalcode.org/project/drupal.git web
-ddev config</code></pre>
+ddev config
+ddev config --composer-root web
+ddev composer require drush/drush
+                        </code>
+                    </pre>
+                    If you plan on working on core these commands will help ensure that <code>git diff</code> won't add extra files.
+                    <pre><code class="language-bash">
+echo "vendor\n**/sites/default" >> .git/info/exclude
+git update-index --assume-unchanged composer.* composer/**/composer.json
+                        </code></pre>
                 </li>
                 <li><strong>Install Drupal and <em>you're ready to patch!</em></strong>
 
